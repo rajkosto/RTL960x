@@ -58,11 +58,14 @@ List of users has successfully ditch stock ONU!
 1. [@stich86 2.5GbE Internet](https://github.com/Anime4000/RTL960x/issues/17#issuecomment-1101435506)
 2. [My journey connecting fiber internet to my router](https://www.reddit.com/r/HomeNetworking/comments/vd0qm2/my_journey_connecting_fiber_internet_to_my_router/)
 3. [Hinet users in TW](https://github.com/Anime4000/RTL960x/pull/44#issue-1281699738)
+4. [@izhamsatria: ~2.5Gbps on TM Unifi](https://forum.lowyat.net/index.php?showtopic=4925452&st=500&p=105123186&#entry105123186) <sup>before <a href="https://www.lowyat.net/2022/286244/time-internet-2gbps-price/">TIME announce 2Gbps</a> plan in Malaysia</sup>
 
 # Where to buy?
 ## ODI DFP-34X-2C2 <sup>Recommended!</sup>
 1. [HSGQ @ Taobao Mall](https://m.tb.cn/h.fJc2RFv?tk=xZ4r2RPCGvj)
-2. [Fibershow @ AliExpress](https://www.aliexpress.com/item/1005003515662920.html) (Choose XPON)
+2. [Fibershow @ AliExpress](https://www.aliexpress.com/item/1005003515662920.html) <sup>Choose XPON</sup>
+3. [CureComp Technology](https://www.facebook.com/CureComp) Malaysia
+
 ### Feature
 * Much cheaper than **VSOL V2801F** & **CarlitoxxPro CPGOS03-0490 v2.0**!
 * Using latest SoC **RTL9601D**!
