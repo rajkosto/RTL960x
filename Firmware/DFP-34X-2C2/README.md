@@ -23,6 +23,18 @@
 # IGD SFU Interchangable
 If you upgrade IGD to SFU firmware or vice-versa, it's require to run factory reset via [erase `mtd3` partition](../../Docs/factory_reset.md#reset), then generate new MAC KEY based on MAC Address that you want to set
 
+# `M110_sfp_ODI_220923FS.tar`
+This firmware is same as official `M110_sfp_ODI_220923.tar` but has OMCI_OLT_MODE 3 fix in binary (so you dont have to use mode 21 that crashes omcid), and added scripts from this github, options are:
+
+## Files
+1. `libmib.so` No longer overwrite software version if OMCI_OLT_MODE is 3
+2. `fix_speed.sh` fix slow upload speed when using HiSGMII or 2500base-X
+3. `fix_vlan_tag.sh` Allow changing FwdOp automatically according to settings
+
+## Activation
+1. Enable `fix_speed.sh` execute `echo 1 > /etc/config/fix_speed` and `LAN_SDS_MODE` 4/5/6
+2. Enable `fix_vlan_tag.sh` execute `echo '' > /etc/config/fix_vlan` to set all MIB 84 EntityID to FwdOp 0x02, or `echo 'VLANS="1901"' > /etc/config/fix_vlan` to set all Entities for VLAN 1901 to FwdOp 0x02, or `echo 'ENTITIES="0x1102 0x110b"' > /etc/config/fix_vlan` to set those specific EntityIDs to FwdOp 0x02, can also override FwdOp to set via `echo 'FWDOP=0x00' >> /etc/config/fix_vlan` (do `cat /etc/config/fix_vlan` to verify all your options, one per line)
+
 # `M110_sfp_ODI_220817.tar`
 This firmware has custom fix and script, options are:
 
